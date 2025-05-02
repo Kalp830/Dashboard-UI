@@ -15,6 +15,7 @@ import {
 } from 'react-icons/fi'
 import { GiSteeringWheel } from 'react-icons/gi'
 import { AiFillCar } from 'react-icons/ai'
+import InterventionsGauge from './components/InterventionsGauge'
 
 // Mock data for the driver rankings
 const worstPerformers = [
@@ -423,7 +424,7 @@ export default function Home() {
                         strokeWidth="18"
                         strokeLinecap="round"
                         strokeDasharray="220"
-                        strokeDashoffset="55"
+                       
                         transform="rotate(350 120 100)"
                       />
                       {/* Scale markers */}
@@ -447,6 +448,9 @@ export default function Home() {
                         cy="42"
                         r="15"
                         fill="#7EBF50"
+                        stroke="#fff"
+                        strokeWidth="4"
+                        strokeLinecap="round"
                       />
                     </svg>
                   </div>
@@ -555,6 +559,8 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+      
         </main>
       </div>
     </div>
